@@ -1,19 +1,36 @@
 # coffee-shop-sales-bi-dashboard
 **Daily Grind Coffee Sales BI Dashboard**
 
-*A Power BI case study: from flat file → star schema → actionable insights*
+*A Power BI Case Study: from flat file ➡️ star schema ➡️ actionable insights*
 
-**Overview**
-
+## 📌 Project Overview
 This project transforms raw point-of-sale transactions into a scalable business intelligence solution. Beyond visualizing a flat CSV, the dataset was re-engineered into a star schema, enhanced with DAX measures, and delivered as interactive Power BI dashboards covering sales, product performance, and customer behavior.
 
-**Why it matters**: This mirrors how analytics is done in the real world—clean data model, robust KPIs, and decision-ready insights.
+## ‼️**Why It Matters
+This mirrors how analytics is done in the real world—clean data model, robust KPIs, and decision-ready insights.
+
+## 📸 Screenshots
+Below are selected previews from the Brew-Haha Coffee Shop Analytics dashboards and supporting analysis.  
+Each screenshot highlights a different stakeholder perspective and demonstrates how the project translates raw data into actionable insights.  
+
+## ▶️ **Sales Overview**
+*High-level KPIs (Total Sales, Average Order Value, YoY Growth) with sales trends over time. This view helps executives quickly assess business performance and growth patterns.*
 
 ![Sales Overview](screenshots/SalesOverviewScreenshot.png)
+
+## ▶️ **Product Performance**
+*Top 10 products by revenue and size preferences (e.g., coffee cup sizes). This page highlights category trends and gives product managers actionable insights into pricing, upselling, and promotions.* 
+
 ![Product Performance](screenshots/ProductPerformanceScreenshot.png)
+
+
+## ▶️ **Customer Insights**
+*Breakdown of loyalty vs non-loyalty sales, customer retention rates, and repeat vs new customers. Designed for marketing and operations teams to measure engagement and program effectiveness.*  
+
 ![Customer Insights](screenshots/CustomerInsightsScreenshot.png)
 
-**Table of Contents**
+
+## 📕 **Table of Contents**
 - Overview
 - Dataset
 - Methodology
@@ -27,7 +44,7 @@ This project transforms raw point-of-sale transactions into a scalable business 
 - Skills Demonstrated
 - Author
 
-**Dataset**
+## 📊 **Dataset**
 
 **File**: *coffee_shop_sales.csv*
 
@@ -46,7 +63,7 @@ This project transforms raw point-of-sale transactions into a scalable business 
 
 - **Employees**: Barista ID
 
-**Methodology**
+## 🔎 **Methodology**
 
 **1. Data Cleaning (Power Query)**
 
@@ -71,7 +88,7 @@ This project transforms raw point-of-sale transactions into a scalable business 
 **4. Dashboards**
 - Built three pages: Sales Overview, Product Performance, Customer Insights with slicers, drill-through, and narrative flow.
 
-**Data Model (Star Schema)**
+## ⭐️ **Data Model (Star Schema)**
 
 **FactSales**
 transaction_id, transaction_date, transaction_time, product_id, customer_id, barista_id, location, payment_method, quantity, unit_price, total_price, loyalty_points_earned, customer_type, hour, minute, second, weekday_name, is_weekend_flag, am_pm_flag, time_of_day
@@ -105,7 +122,7 @@ location, store_type (Airport, University, Mall, Downtown)
 
 - Why star schema? Flexibility, performance, clarity, and scalability (future integration with SQL Server / warehouse).
 
-**Key DAX Measures**
+## ➗️ **Key DAX Measures**
 
 All formulas use a monospaced font for readability.
 
@@ -152,7 +169,7 @@ CALCULATE( [count_customers], DimCustomers[is_repeat_customer_flag] = "New" )
 customer_retention_rate =
 DIVIDE( [count_customer_repeat], [count_customers] )
 
-**Dashboards**
+## 📈 **Dashboards**
 
 **1) Sales Overview**
 
@@ -208,7 +225,7 @@ DIVIDE( [count_customer_repeat], [count_customers] )
 
 - Most Popular Time of Day (stacked)
 
-**Insights**
+## 🔭 **Insights**
 
 - **Sales**: Weekend/holiday spikes; University & Airport growth driven by higher traffic (transactions), not AOV.
 
@@ -226,7 +243,7 @@ DIVIDE( [count_customer_repeat], [count_customers] )
 
 - No supplier cost or marketing data → profitability/ROAS not measured.
 
-**Next Steps**
+## 💡 **Next Steps**
 
 - **Database Integration**: Load star schema into SQL Server for scale and cross-domain reporting.
 
@@ -236,7 +253,7 @@ DIVIDE( [count_customer_repeat], [count_customers] )
 
 - **Predictive Analytics**: Forecast sales; model retention/churn and uplift.
 
-**How to Use**
+## 📃 **How to Use**
 1. Clone/Download this repo.
    
 2. Open CoffeeShop_Dashboard.pbix in Power BI Desktop (latest version).
@@ -245,8 +262,7 @@ DIVIDE( [count_customer_repeat], [count_customers] )
    
 4. Use slicers (Date, Location, Product Category) and drill-through to explore.
 
-
-**Skills Demonstrated**
+## 🛠️ **Skills Demonstrated**
 **1. Power Query**: cleansing, denormalization → star schema derivation
 
 **2. Data Modeling**: fact/dim design, relationships, date table
@@ -259,10 +275,14 @@ DIVIDE( [count_customer_repeat], [count_customers] )
 
 **6. Scalability Mindset**: SQL Server-ready schema & roadmap
 
-**Reflection**
+## 🤔 **Reflection**
 
 This project pushed me beyond basic dashboarding into full data modeling and BI solution design. By restructuring the dataset into a star schema and creating advanced DAX measures, I built dashboards that not only visualize sales but also reveal customer retention, loyalty impact, and product trends. The experience strengthened my Power BI and analytics skills while reinforcing the importance of designing solutions that are scalable, business-driven, and decision-ready.
 
-**Author**
-
+## 🟢 **Author**
 Ardonna Cardines — Data & Decision Analyst
+
+## 🔗 Related Project
+This project is part of a larger Coffee Shop Analytics case study.  
+For advanced analysis of product associations and bundling strategies, see my companion project:  
+👉 [Coffee Shop Market Basket Analysis](https://github.com/aleighcar/coffee-shop-market-basket-analysis)
