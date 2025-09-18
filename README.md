@@ -9,6 +9,10 @@ This project transforms raw point-of-sale transactions into a scalable business 
 
 **Why it matters**: This mirrors how analytics is done in the real world—clean data model, robust KPIs, and decision-ready insights.
 
+![Sales Overview](screenshots/SalesOverviewScreenshot.png)
+![Product Performance](screenshots/ProductPerformanceScreenshot.png)
+![Customer Insights](screenshots/CustomerInsightsScreenshot.png)
+
 **Table of Contents**
 - Overview
 - Dataset
