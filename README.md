@@ -282,6 +282,10 @@ DIVIDE( [count_customer_repeat], [count_customers] )
 
 **6. Scalability Mindset**: SQL Server-ready schema & roadmap
 
+**Reflection**
+
+This project pushed me beyond basic dashboarding into full data modeling and BI solution design. By restructuring the dataset into a star schema and creating advanced DAX measures, I built dashboards that not only visualize sales but also reveal customer retention, loyalty impact, and product trends. The experience strengthened my Power BI and analytics skills while reinforcing the importance of designing solutions that are scalable, business-driven, and decision-ready.
+
 **Author**
 
 Ardonna Cardines — Data & Decision Analyst
