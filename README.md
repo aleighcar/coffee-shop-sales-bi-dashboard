@@ -245,29 +245,6 @@ DIVIDE( [count_customer_repeat], [count_customers] )
    
 4. Use slicers (Date, Location, Product Category) and drill-through to explore.
 
-**Repo Structure**
-/DailyGrindCoffee-BI
-
-├─ CoffeeShop_Dashboard.pbix
-
-├─ data/
-
-│  └─ coffee_shop_sales.csv
-
-├─ docs/
-
-│  └─ Documentation.pdf
-
-├─ screenshots/
-
-│  ├─ sales-overview.png
-
-│  ├─ product-performance.png
-
-│  └─ customer-insights.png
-
-└─ README.md
-
 
 **Skills Demonstrated**
 **1. Power Query**: cleansing, denormalization → star schema derivation
