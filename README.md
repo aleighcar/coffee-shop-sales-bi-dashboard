@@ -4,28 +4,35 @@
 *A Power BI Case Study: from flat file ➡️ star schema ➡️ actionable insights*
 
 ## 📌 Project Overview
-This project transforms raw point-of-sale transactions into a scalable business intelligence solution. Beyond visualizing a flat CSV, the dataset was re-engineered into a star schema, enhanced with DAX measures, and delivered as interactive Power BI dashboards covering sales, product performance, and customer behavior.
+This project transforms raw point-of-sale transactions into a scalable business intelligence solution. Beyond visualizing a flat CSV file, the dataset was re-engineered into a star schema, enhanced with DAX measures, and delivered as interactive Power BI dashboards reporting on sales, product performance, and customer behavior.
 
-## ‼️**Why It Matters
-This mirrors how analytics is done in the real world—clean data model, robust KPIs, and decision-ready insights.
+## ‼️ Why It Matters
+This mirrors how analytics is done in the real world — *clean data model, robust KPIs, and decision-ready insights.*
 
 ## 📸 Screenshots
-Below are selected previews from the Brew-Haha Coffee Shop Analytics dashboards and supporting analysis.  
+Below are selected previews from my **Daily Grind Coffee Shop Analytics** dashboards and supporting analysis.
+
 Each screenshot highlights a different stakeholder perspective and demonstrates how the project translates raw data into actionable insights.  
 
 ## ▶️ **Sales Overview**
-*High-level KPIs (Total Sales, Average Order Value, YoY Growth) with sales trends over time. This view helps executives quickly assess business performance and growth patterns.*
+*High-level KPIs (Total Sales, Average Order Value, YoY Growth) with sales trends over time.*
+
+This view helps executives quickly assess business performance and growth patterns.*
 
 ![Sales Overview](screenshots/SalesOverviewScreenshot.png)
 
 ## ▶️ **Product Performance**
-*Top 10 products by revenue and size preferences (e.g., coffee cup sizes). This page highlights category trends and gives product managers actionable insights into pricing, upselling, and promotions.* 
+*Top 10 Products by Revenue and Size Preferences (e.g., coffee cup and tea cup sizes).*
+
+This page highlights category trends and gives product managers actionable insights into pricing, upselling, and promotions.
 
 ![Product Performance](screenshots/ProductPerformanceScreenshot.png)
 
 
 ## ▶️ **Customer Insights**
-*Breakdown of loyalty vs non-loyalty sales, customer retention rates, and repeat vs new customers. Designed for marketing and operations teams to measure engagement and program effectiveness.*  
+*Breakdown of Loyalty vs Non-Loyalty  Sales, Customer Retention Rates, and Repeat vs New Customers.*
+
+Designed for marketing and operations teams to measure engagement and program effectiveness.
 
 ![Customer Insights](screenshots/CustomerInsightsScreenshot.png)
 
