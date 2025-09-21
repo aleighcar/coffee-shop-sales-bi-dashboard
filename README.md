@@ -167,6 +167,7 @@ count_customers_nonloyalty =
 CALCULATE( [count_customers], FactSales[customer_type] IN { "Non-Loyalty" } )
 
 -- Repeat Customers
+
 retained_customers =
 VAR current_month = MAX('DimDate'[Date]) VAR 
 previous_month = EOMONTH(current_month, -1)VAR 
