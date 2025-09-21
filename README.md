@@ -166,15 +166,25 @@ CALCULATE( [count_customers], FactSales[customer_type] IN { "Loyalty" } )
 count_customers_nonloyalty =
 CALCULATE( [count_customers], FactSales[customer_type] IN { "Non-Loyalty" } )
 
--- Repeat / New (requires DimCustomers flag)
-count_customer_repeat =
-CALCULATE( [count_customers], DimCustomers[is_repeat_customer_flag] = "Repeat" )
+-- Repeat Customers
+retained_customers =
+VAR current_month = MAX('DimDate'[Date]) VAR 
+previous_month = EOMONTH(current_month, -1)VAR 
+customers_previous_month = 
+CALCULATETABLE(VALUES(FactSales[customer_id]), 
+DATESINPERIOD('DimDate'[Date], previous_month, 1, MONTH)) VAR 
+customers_current_month = 
+CALCULATETABLE(VALUES(FactSales[customer_id]), 
+DATESINPERIOD('DimDate'[Date], current_month, 1, MONTH)) RETURN 
+COUNTROWS(INTERSECT(customers_previous_month, 
+customers_current_month))
 
-count_customer_new =
-CALCULATE( [count_customers], DimCustomers[is_repeat_customer_flag] = "New" )
+active_customers =
+DISTINCTCOUNT(FactSales[customer_id])
 
-customer_retention_rate =
-DIVIDE( [count_customer_repeat], [count_customers] )
+customer_retention_rate = DIVIDE([retained_customers], CALCULATE([Active Customers], 
+DATEADD('DimDate'[Date], -1, MONTH)))
+
 
 ## 📈 **Dashboards**
 
